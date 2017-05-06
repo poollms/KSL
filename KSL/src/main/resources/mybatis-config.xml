@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- <typeAliases> <typeAlias alias="userVo" type="spring.sample.model.User"/> 
+		</typeAliases> <typeHandlers> <typeHandler handler="org.apache.ibatis.type.SqlDateTypeHandler" 
+		javaType="java.sql.Date" jdbcType="DATE"/> </typeHandlers> <mappers> <mapper 
+		resource="mappers/MemberMapper.xml"/> <package name="spring.sample.mapper"/> 
+		<mapper class="spring.sample.mapper.MemberMapper"/> <mapper url="file://mappers/MemberMapper.xml"/> 
+		</mappers> -->
+
+<!-- mapper의 위치를 root-context에서 *.xml로 지정하는 방법도 있음 -->
+ <mappers>
+ 	<mapper resource ="mapper/sql-qr.xml"/>
+ </mappers>
+
+</configuration>
+
